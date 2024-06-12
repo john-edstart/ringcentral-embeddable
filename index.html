@@ -77,7 +77,7 @@
           <div class="mb-3 row">
             <label for="redirectUri" class="col-sm-2 col-form-label">redirectUri</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="redirectUri" placeholder="default: https://ringcentral.github.io/ringcentral-embeddable/redirect.html">
+              <input type="text" class="form-control" id="redirectUri" placeholder="default: https://john-edstart.github.io/ringcentral-embeddable/redirect.html">
             </div>
           </div>
         </form>
@@ -90,7 +90,7 @@
 &lt;script&gt;
   (function() {
     var rcs = document.createElement("script");
-    rcs.src = "https://ringcentral.github.io/ringcentral-embeddable/adapter.js";
+    rcs.src = "https://john-edstart.github.io/ringcentral-embeddable/adapter.js";
     var rcs0 = document.getElementsByTagName("script")[0];
     rcs0.parentNode.insertBefore(rcs, rcs0);
   })();
@@ -100,13 +100,13 @@
       <div class="tab-pane fade" id="iframe-way" role="tabpanel" aria-labelledby="iframe-tab" tabindex="0">
         <p>Create a iframe with the following codes</p>
         <pre id="iframe-code">
- &lt;iframe width="300" height="500" allow="microphone" src="https://ringcentral.github.io/ringcentral-embeddable/app.html"&gt;
+ &lt;iframe width="300" height="500" allow="microphone" src="https://john-edstart.github.io/ringcentral-embeddable/app.html"&gt;
  &lt;/iframe&gt;
         </pre>
       </div>
     </div>
     <p>You need to add following uri to your redirect url in app setting on developer website, if you don't config redirect widget uri.</p>
-    <pre id="defaultRedirectUri">https://ringcentral.github.io/ringcentral-embeddable/redirect.html</pre>
+    <pre id="defaultRedirectUri">https://john-edstart.github.io/ringcentral-embeddable/redirect.html</pre>
     <p>For full document of <a href="https://github.com/ringcentral/ringcentral-embeddable#documents" target="_blank" rel="noopener noreferrer">API and Event</a>, please refer to <a href="https://github.com/ringcentral/ringcentral-embeddable#documents" target="_blank" rel="noopener noreferrer">here</a></p>
     <h2>Config your clientId in local Environment</h2>
     <p>1. Click <a href="#" id="setEnvironment">here to set this widget's client ID and app Server</a> in local. Enable and save.</p>
@@ -181,7 +181,7 @@
       } else {
         newAdapterUri = newAdapterUri + '"';
       }
-      newAdapterUri = newAdapterUri.replace('https://ringcentral.github.io/ringcentral-embeddable', basePath);
+      newAdapterUri = newAdapterUri.replace('https://john-edstart.github.io/ringcentral-embeddable', basePath);
       var iframeCode = iframeElem.innerHTML;
       var iframeSrc = iframeCode.match(/"http\S+"/)[0];
       var newIframeSrc = iframeSrc.replace(/\?\S*"/, '').replace(/"$/, '');
@@ -190,7 +190,7 @@
       } else {
         newIframeSrc = newIframeSrc + '"';
       }
-      newIframeSrc = newIframeSrc.replace('https://ringcentral.github.io/ringcentral-embeddable', basePath);
+      newIframeSrc = newIframeSrc.replace('https://john-edstart.github.io/ringcentral-embeddable', basePath);
       adapterElem.innerHTML = adapterCode.replace(adapterUri, newAdapterUri);
       iframeElem.innerHTML = iframeCode.replace(iframeSrc, newIframeSrc);
     }
@@ -199,7 +199,7 @@
       var basePath = getBasePath();
       var defaultRedirectUriElem = window.document.querySelector('#defaultRedirectUri');
       var defaultRedirectUri = defaultRedirectUriElem.innerText;
-      defaultRedirectUri = defaultRedirectUri.replace('https://ringcentral.github.io/ringcentral-embeddable', basePath);
+      defaultRedirectUri = defaultRedirectUri.replace('https://john-edstart.github.io/ringcentral-embeddable', basePath);
       defaultRedirectUriElem.innerHTML = defaultRedirectUri;
       var redirectUriInput = window.document.querySelector('#redirectUri');
       redirectUriInput.setAttribute('placeholder', defaultRedirectUri);
