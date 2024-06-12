@@ -1,7 +1,7 @@
 import url from 'url';
 
 const origins = [
-  'https://ringcentral.github.io',
+  'https://john-edstart.github.io',
   'https://apps.ringcentral.com',
 ];
 

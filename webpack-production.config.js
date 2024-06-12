@@ -34,7 +34,7 @@ if (fs.existsSync(apiConfigFile)) {
   };
 }
 
-let hostingUrl = process.env.HOSTING_URL || 'https://ringcentral.github.io/ringcentral-embeddable';
+let hostingUrl = process.env.HOSTING_URL || 'https://john-edstart.github.io/ringcentral-embeddable';
 let redirectUri = process.env.REDIRECT_URI;
 let proxyUri = process.env.PROXY_URI;
 
@@ -44,7 +44,7 @@ if (localExtensionMode) {
 }
 
 const errorReportKey = process.env.ERROR_REPORT_KEY;
-const recordingLink = process.env.RECORDING_LINK || 'https://ringcentral.github.io/ringcentral-media-reader/';
+const recordingLink = process.env.RECORDING_LINK || 'https://john-edstart.github.io/ringcentral-media-reader/';
 const noiseReductionSDKUrl = localExtensionMode ? '/noise-reduction' : 'https://apps.ringcentral.com/integration/ringcentral-embeddable/noise-reduction/1.0.13.1';
 function getWebpackConfig({ prefix, brand, env = {}, styleLoader, themeFolder = null }) {
   const config = getBaseConfig({ themeFolder, styleLoader });

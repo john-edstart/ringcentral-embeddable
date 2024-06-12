@@ -910,7 +910,7 @@ export function createPhone({
         useValue: {
           checkConnectionFunc: () => {
             const t = Date.now();
-            const host = process.env.HOSTING_URL || 'https://ringcentral.github.io/ringcentral-embeddable';
+            const host = process.env.HOSTING_URL || 'https://john-edstart.github.io/ringcentral-embeddable';
             return fetch(`${host}/assets/images/favicon.ico?t=${t}`);
           },
         },
